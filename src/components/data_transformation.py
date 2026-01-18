@@ -16,12 +16,12 @@ import os
 from src.utils import save_object
 
 @dataclass
-class DataTranformationConfig:
+class DataTransformationConfig:
     preprocessor_obj_file_path=os.path.join('artifacts',"preprocessor.pkl")
 
-class DataTranformation:
+class DataTransformation:
     def __init__(self):
-            self.data_transformation_config=DataTranformationConfig()
+            self.data_transformation_config=DataTransformationConfig()
 
     def get_data_transformer_object(self):
          try:
