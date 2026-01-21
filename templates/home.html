@@ -91,20 +91,21 @@
             </select>
         </div>
         <div class="mb-3">
-           <label class="form-label">Reading Score out of 100</label>
-<input class="form-control" type="number" name="reading_score" placeholder="Enter your Reading score" min='0' max='100' required />
-
-<label class="form-label">Writing Score out of 100</label>
-<input class="form-control" type="number" name="writing_score" placeholder="Enter your Writing Score" min='0' max='100' required />
-
+            <label class="form-label">Writing Score out of 100</label>
+            <input class="form-control" type="number" name="reading_score"
+                placeholder="Enter your Reading score" min='0' max='100' />
         </div>
         <div class="mb-3">
-            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" />
+            <label class="form-label">Reading Score out of 100</label>
+            <input class="form-control" type="number" name="writing_score"
+                placeholder="Enter your Reading Score" min='0' max='100' />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
         </div>
     </form>
-   {% if results %}
-<h2>Your predicted Maths Score is: {{ results }}</h2>
-{% endif %}
-
-</body>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
 </html>
