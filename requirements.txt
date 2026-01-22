@@ -1,11 +1,16 @@
-numpy
+# numpy
 seaborn
-pandas
+# pandas
 matplotlib
-scikit-learn
+# scikit-learn
 catboost
 xgboost
-Flask
+# flask
 dill
 
 
+scikit-learn==1.3.2
+numpy==1.26.4
+pandas==2.1.4
+flask
+gunicorn
